@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding:0 ;
+    box-sizing:border-box ;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    max-width: 1200px;
+    margin: 0 auto ;
+}
+
+header{
+    background-color: rgb(226, 149, 47);
+    color: aliceblue;
+    padding: 20px;
+    text-align: center;
+    grid-column:1/ span 2 ;
+}
+
+nav{
+    background-color: blanchedalmond;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+    grid-column:1/ span 2 ;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 20px;
+}
+
+.product_list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    padding: 20px;
+    grid-column: 1;
+}
+
+a{
+    text-decoration: none;
+}   
+
+.product_card{
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.product_card img{
+    max-width: 100%;
+    height: auto;
+}
+
+.sidebar{
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    grid-column: 2;
+}
+
+.social_icons{
+    margin-top: 20px;
+}
+
+.social_icons a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+@media(max-width:576px){
+    .product_list{
+        grid-template-columns: 1fr;
+    }
+    .product_card{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .sidebar{
+        grid-column: 1/span 2;
+    }
+
+    .footer{
+        grid-template-columns: 1fr;
+    }
+}
+
+.footer{
+    background-color: #333;
+    padding: 20px;
+    grid-column: 1/ span 2;
+    text-align: center;
+    color: white;
+    display: grid;
+}
+
+.footer_item{
+    padding: 10px;
+}
+
+@media(min-width:768px){
+    .footer{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+button{
+    background-color: bisque;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 15;
+}
+
+.btn_buying1{
+    border-radius: 15px;
+}
+
+.btn_buying2{
+    border-radius: 15px;
+}
+
+.btn_buying3{
+    border-radius: 15px;
+}
+
+.btn_buying4{
+    border-radius: 15px;
+}
+
+.btn_buying5{
+    border-radius: 15px;
+}
+
+.btn_buying6{
+    border-radius: 15px;
+}
